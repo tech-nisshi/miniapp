@@ -1,0 +1,23 @@
+<div class="row" style="padding-top: 50px;">
+  <%= form_tag('/tweets', method: :post) do %>
+    <div class="col s12 m6 offset-m3">
+      <h1>New Post</h1>
+      <div class="field">
+        <label for="post_text" class>Text</label>
+        <textarea name="text" id="post_text">
+        </textarea>
+      </div>
+      <div class="actions">
+        <input type="submit" name="commit" value="Create Post" data-disable-with="Create Post">
+      </div>
+        
+    </div>
+  <% end %>
+</div>
+
+
+<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
+
+
